@@ -1,0 +1,33 @@
+{
+  "title": "TP-Link IPC Local",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect a local TP-Link IPC",
+        "description": "Configure the camera in ONVIF first. Select that entry; its credentials stay in ONVIF. Only TL-IPC4ADW hardware 1.0 is supported.",
+        "data": {
+          "onvif_entry_id": "ONVIF configuration"
+        }
+      }
+    },
+    "error": {
+      "onvif_required": "Set up ONVIF first.",
+      "cannot_connect": "Cannot verify this camera. Check ONVIF credentials and supported model/hardware."
+    },
+    "abort": {
+      "onvif_required": "Set up ONVIF first.",
+      "already_configured": "This camera is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Camera options",
+        "description": "Talk is experimental. Protocol transport was tested with silent audio; audible speech is not verified. Reload this entry after changing ONVIF credentials.",
+        "data": {
+          "enable_talk": "Enable experimental half-duplex talk"
+        }
+      }
+    }
+  }
+}

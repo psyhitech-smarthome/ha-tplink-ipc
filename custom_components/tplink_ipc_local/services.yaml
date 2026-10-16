@@ -1,0 +1,35 @@
+control:
+  name: Camera control
+  description: Execute a local camera action for an explicit integration entry. Requires administrator privileges when invoked with a user context. No arbitrary device URLs or credentials are accepted.
+  fields:
+    entry_id:
+      name: Integration entry
+      required: true
+      selector:
+        config_entry:
+          integration: tplink_ipc_local
+    operation:
+      name: Operation
+      required: true
+      selector:
+        select:
+          options:
+            - state
+            - set
+            - move
+            - stop
+            - preset_goto
+            - preset_save
+            - preset_delete
+            - region_save
+            - cover_save
+            - schedule_save
+            - alarm_start
+            - alarm_stop
+            - system_time
+            - system_reboot
+            - firmware_check
+    data:
+      name: Action parameters
+      selector:
+        object:

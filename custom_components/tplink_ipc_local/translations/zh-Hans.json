@@ -1,0 +1,33 @@
+{
+  "title": "TP-Link IPC Local",
+  "config": {
+    "step": {
+      "user": {
+        "title": "连接 TP-Link 本地摄像头",
+        "description": "请先配置 ONVIF，再选择对应条目。凭据继续由 ONVIF 管理。目前仅支持 TL-IPC4ADW 硬件 1.0。",
+        "data": {
+          "onvif_entry_id": "ONVIF 配置"
+        }
+      }
+    },
+    "error": {
+      "onvif_required": "Set up ONVIF first.",
+      "cannot_connect": "Cannot verify this camera. Check ONVIF credentials and supported model/hardware."
+    },
+    "abort": {
+      "onvif_required": "Set up ONVIF first.",
+      "already_configured": "This camera is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "摄像头选项",
+        "description": "对讲为实验功能，仅验证过静音数据传输，尚未验证现场语音效果。ONVIF 凭据变化后请重新加载本集成。",
+        "data": {
+          "enable_talk": "启用实验性半双工对讲"
+        }
+      }
+    }
+  }
+}

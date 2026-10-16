@@ -1,0 +1,18 @@
+{
+  "domain": "tplink_ipc_local",
+  "name": "TP-Link IPC Local",
+  "version": "0.1.0",
+  "config_flow": true,
+  "documentation": "https://github.com/psyhitech-smarthome/ha-tplink-ipc",
+  "issue_tracker": "https://github.com/psyhitech-smarthome/ha-tplink-ipc/issues",
+  "requirements": [],
+  "dependencies": [
+    "onvif",
+    "http"
+  ],
+  "codeowners": [
+    "@yeyitech"
+  ],
+  "iot_class": "local_polling",
+  "integration_type": "device"
+}
